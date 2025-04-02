@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BOOM - Educación Física 3º ESO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BOOM – Educación Física 3º ESO</h1>
+        <div class="teams">
+            <div class="team" id="teamA">Equipo A: <span id="scoreA">0</span></div>
+            <div class="team" id="teamB">Equipo B: <span id="scoreB">0</span></div>
+        </div>
+        <div class="question-box">
+            <p id="question"></p>
+            <div class="options">
+                <button class="option" id="optA" onclick="checkAnswer('A')"></button>
+                <button class="option" id="optB" onclick="checkAnswer('B')"></button>
+                <button class="option" id="optC" onclick="checkAnswer('C')"></button>
+                <button class="option" id="optD" onclick="checkAnswer('D')"></button>
+            </div>
+            <button id="rebound" style="display:none;" onclick="reboundQuestion()">Rebote</button>
+        </div>
+        <button id="next" onclick="nextQuestion()">Siguiente Pregunta</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
